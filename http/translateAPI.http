@@ -1,0 +1,23 @@
+### 한국어 텍스트를 영어로 번역
+POST http://localhost:8080/api/translate/to-english
+Content-Type: application/json
+
+{
+  "text": "안녕하세요! 오늘은 날씨가 정말 좋네요. 어떻게 지내세요?"
+}
+
+### 긴 텍스트 번역 예제
+POST http://localhost:8080/api/translate/to-english
+Content-Type: application/json
+
+{
+  "text": "안녕하세요. 저는 스프링부트와 코틀린으로 개발하고 있습니다. 이 번역 API는 MCP를 사용하여 구현되었고, 한국어 텍스트를 영어로 번역해주는 기능을 제공합니다. 이 API를 통해 게시판의 글을 영어로 쉽게 번역할 수 있습니다."
+}
+
+### 짧은 문장 번역
+POST http://localhost:8080/api/translate/to-english
+Content-Type: application/json
+
+{
+  "text": "코틀린은 정말 멋진 언어입니다."
+}
